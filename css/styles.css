@@ -164,10 +164,12 @@ body {
 
 .modal-open-button {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
   justify-content: center;
+  height: 50px;
+  width: 216px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
