@@ -2,6 +2,7 @@
   --primary-font: 'Roboto', sans-serif;
   --navy-blue: #2e2f42;
   --slate: #434455;
+  --light-slate: #8e8f99;
   --white: #ffffff;
   --ocean: #404bbf;
   --iris: #4d5ae5;
@@ -134,6 +135,10 @@ body {
 
 .hero {
   background-color: var(--navy-blue);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero_1.jpg);
+  background-size: cover;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .hero-container {
@@ -179,12 +184,19 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 
-.advantages-list-item {
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cloud);
   width: 264px;
+  height: 112px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
 }
 
 .advantages-title {
@@ -204,7 +216,7 @@ body {
 }
 
 .main-title {
-  margin-bottom: 50px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -263,12 +275,50 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+}
+
+.customers {
+  padding-top: 130px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-list-item {
+  height: 88px;
+  padding: 16px 32px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
 }
 
 .page-footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--navy-blue);
+}
+
+.page-footer-container {
+  display: flex;
+  gap: 120px;
 }
 
 .logo-footer {
@@ -288,6 +338,31 @@ body {
   letter-spacing: 0.02em;
   color: var(--cornflower);
   width: 264px;
+}
+
+.footer-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.footer-social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .portfolio-section {
