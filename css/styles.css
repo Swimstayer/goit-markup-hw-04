@@ -355,7 +355,7 @@ body {
   gap: 16px;
 }
 
-.footer-social-list-item {
+.footer-social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
